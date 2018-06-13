@@ -1,4 +1,4 @@
-import ActionType from './ActionType'
+import ActionType from '../ActionType'
 
 export function increaseAction() {
     return {
@@ -8,7 +8,7 @@ export function increaseAction() {
 
 export function decreseAction() {
     return {
-        type: ActionType.DECRESE
+        type: ActionType.DECREASE
     }
 }
 

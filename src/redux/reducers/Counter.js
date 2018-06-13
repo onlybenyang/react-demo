@@ -1,22 +1,26 @@
-import ActionType from './ActionType'
+import ActionType from '../ActionType'
 
-export default function(state, action) {
+const initState = {
+    count: 0
+}
+
+export default function(state = initState, action) {
     switch (action.type) {
         case ActionType.INCREASE:
             return {
-                ...state,
+                // ...state,
                 count: state.count + 1
             }
             break;
         case ActionType.DECREASE:
             return {
-                ...state,
+                // ...state,
                 count: state.count - 1
             }
             break;
         case ActionType.RESET:
             return {
-                ...state,
+                // ...state,
                 count: 0
             }
             break;

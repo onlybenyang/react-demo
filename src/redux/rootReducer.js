@@ -1,7 +1,7 @@
-import Counter from './actions/Counter';
+import Counter from './reducers/Counter';
 
 export default function combineReducers(state = {}, action) {
     return {
-        counter: Counter(state, action)
+        counter: Counter(state.counter, action)
     }
 }
