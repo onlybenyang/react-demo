@@ -1,9 +1,11 @@
+'use strict'
+
 import Counter from './reducers/Counter';
-import UserInfo from './reducers/UserInfo';
+import User from './reducers/User';
 
 export default function combineReducers(state = {}, action) {
     return {
         counter: Counter(state.counter, action),
-        userInfo: UserInfo(state.userInfo, action)
+        user: User(state.user, action)
     }
 }

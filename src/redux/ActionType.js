@@ -1,8 +1,11 @@
 export default {
+    // Counter
     INCREASE: 'action.increase',
     DECREASE: 'action.decrease',
     RESET: 'action.reset',
-    GET_USER_INFO_REQUEST: "userInfo/GET_USER_INFO_REQUEST",
-    GET_USER_INFO_SUCCESS: "userInfo/GET_USER_INFO_SUCCESS",
-    GET_USER_INFO_FAIL: "userInfo/GET_USER_INFO_FAIL"
+
+    // User
+    GET_USER: 'action.get_user',
+    GET_USER_SUCCESS: 'get_user_success',
+    GET_USER_ERROR: 'get_user_error',
 }
